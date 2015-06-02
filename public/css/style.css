@@ -1,0 +1,117 @@
+body{
+	background-color: #88CC88;
+	color:#116611;
+	font-family: 'Poiret One', cursive;
+	font-family: 'Bad Script', cursive;
+	font-family: 'Advent Pro', sans-serif;
+
+}
+.top_bar{
+	font-family: 'Advent Pro', sans-serif;
+	font-variant: small-caps;
+	font-size: 15px;
+}
+
+#contact-form{
+	background-color: #55AA55;
+	padding: 20px;
+}
+#about{
+	background-color: #55AA55;
+	color: white;
+	padding: 20px;
+	margin-left: 10px;
+}
+
+.container-fluid{
+	margin-top: 5em;
+}
+
+.logo{
+	width:50px;
+	height: 50px;
+}
+#search-map {
+	font-family: Roboto;
+}
+
+#type-selector {
+	color: #fff;
+	background-color: #ffffff;
+	padding: 5px 11px 0px 11px;
+	border-radius: 4px;
+	margin-bottom: 0.2px;
+	border-style: solid; 
+	border-color:green;
+	border-width: 1px;
+}
+
+#type-selector label {
+	font-family: Roboto;
+	font-size: 13px;
+	font-weight: 300;
+	color: green;
+}
+a:hover{
+	background-color: black;
+}
+.banner{
+	background: no-repeat;
+	background-size:cover;
+	min-height:720px;
+	position:relative;
+}
+#map-canvas {
+        width: 100;
+        height: 600px;
+        margin-top: 10px;
+        border-style: groove;
+        border-radius: 10px;
+}
+ #pac-input {
+	background-color: #fff;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	margin-left: 12px;
+	padding: 0 11px 0 13px;
+	text-overflow: ellipsis;
+	width: 400px;
+	border-color: green;
+}
+li.active >a:focus{
+	background-color: #D9EDF7;
+}
+#pac-input:focus {
+	border-color: #4d90fe;
+}
+
+.pac-container {
+	font-family: Roboto;
+}
+.side_bar{
+	margin-top: 0px;
+	border-style: none;
+	padding-top: 150px;
+	padding: 10px;
+	background-color: #55AA55;
+	border-color: #116611;
+	width: 300px;
+	margin-left: 5px;
+
+}
+#profile_pic{
+	margin: 10px;
+	max-height: 240px;
+	max-width: 240px;
+}
+#footer{
+	background-color: #55AA55;
+	position: static;
+	max-width: 100%;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	max-height: 150px;
+	font-size: 15px;
+}
