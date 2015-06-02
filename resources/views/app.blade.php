@@ -29,15 +29,14 @@
 				<div class="container">
 					<div class="navbar-header">
 						<img class= "logo  pull-left" src="./img/logo-jkuat.jpg">
-						<!-- <h2>Jommo Kenyatta University of Agriculture and Technology</h2>
-						<h3>Setting Trends in Higher Education, Research and Innovation</h3> -->
+						
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						</button>
 						
-						<a class="navbar-brand" style="color:white" href="#">Jomo Kenyatta University of Agriculture and Technology</a>
+						<a class="navbar-brand" href="#" style="margin-left: 5px;">Jomo Kenyatta University of Agriculture and Technology</a>
 					</div>
 					<div class="collapse navbar-collapse" style="color:white">
 
