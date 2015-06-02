@@ -28,7 +28,7 @@
 			<nav class="navbar navbar-default navbar-fixed-top top_bar" style="background-color: #116611;" >
 				<div class="container">
 					<div class="navbar-header">
-						<img class= "logo  pull-left" src="img/logo-jkuat.jpg">
+						<img class= "logo  pull-left" src="{{ url('img/logo-jkuat.jpg') }}">
 						
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="icon-bar"></span>
@@ -45,14 +45,13 @@
 							<li><a href="{{ url('/about') }}">About</a></li>
 							<li><a href="{{ url('/contact') }}">Contact Us</a></li>
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+								<a href="" class="dropdown-toggle" style= "color: #777777; background-color: none;" data-toggle="dropdown">Services<b class="caret"></b></a>
 								<ul class="dropdown-menu">
 									<li><a href="#">Location Finder</a></li>
 									<li><a href="#">Help Services</a></li>
 									<li><a href="#">NoticeBoard</a></li>
-									<li><a href="#">NoticeBoard</a></li>
 								</ul>
-							</li>
+							</li>							
 						</ul>
 
 						<ul class="nav navbar-nav navbar-right">
@@ -60,12 +59,12 @@
 							<li><a href="{{ url('/auth/login') }}">Login</a></li>
 							<li><a href="{{ url('/auth/register') }}">Register</a></li>
 							@else
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
-								<ul class="dropdown-menu" role="menu">
-									<li><a href="{{ url('/auth/logout') }}">Logout</a></li>
-								</ul>
-							</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" style= "color: #777777; background-color: none;" data-toggle="dropdown" role="button" aria-expanded="true">{{ Auth::user()->name }} <span class="caret" style= "color: #777777;"></span></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="{{ url('/auth/logout') }}">Logout</a></li>
+									</ul>
+								</li>
 							@endif
 						</ul>
 

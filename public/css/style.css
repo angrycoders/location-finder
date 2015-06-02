@@ -22,6 +22,12 @@ body{
 div>a:hover, p>a:hover{
 	background-color: white;
 }
+a:hover{
+	background-color: transparent;
+	font-color: black;
+
+}
+
 #about{
 	background-color: #55AA55;
 	color: white;
