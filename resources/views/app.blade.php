@@ -28,7 +28,7 @@
 			<nav class="navbar navbar-default navbar-fixed-top top_bar" style="background-color: #116611;" >
 				<div class="container">
 					<div class="navbar-header">
-						<img class= "logo  pull-left" src="./img/logo-jkuat.jpg">
+						<img class= "logo  pull-left" src="img/logo-jkuat.jpg">
 						
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="icon-bar"></span>

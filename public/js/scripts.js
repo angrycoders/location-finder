@@ -88,3 +88,47 @@ function initialize() {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
+$(document).on("click", '#general_settings', function(){
+	$('#error, #notices, #noticeboards,  #loading').fadeOut(1500);
+	$('#about_us, #upload_avatar, #avatar_upload, .drop_down_sort, #notice_upload, #contact_us_form').addClass('hidden');
+	html="";
+	html+="<form><div class='general_settings_inner'>";
+	html+="<div id='general_settings_message text-center'></div> "
+	html+="<p class='change_username'>Userame: </p><hr>";
+	html+="<p class='change_password'>Password: <a href='#modal-container-625299' class='preview_details' role='button' id='modal-625299' data-toggle='modal'>Click to change</a> <span class='ui-icon hidden pull-right ui-icon-pencil'></span></p><hr>";
+	html+="<p data-toggle='tooltip' title='Click to change values' class='change_email'>Email: <span class='ui-icon hidden pull-right ui-icon-pencil'></span></p><input type='text' id='new_email' class='hidden text-info form-control general_settings_input'><hr>";	
+	html+="<p data-toggle='tooltip' title='Click to change values' class='change_name'>Full Name: <span class=' hidden ui-icon pull-right ui-icon-pencil'></span></p><input type='text' id='full_name' class='hidden text-info form-control general_settings_input'><hr>";	
+	html+="<p data-toggle='tooltip' title='Click to change values' class='change_phone'>Phone: <span class='ui-icon hidden pull-right ui-icon-pencil'></span></p><input type='text' placeholder='+[code][number]i.e +254 71098183' id='new_phone' class='hidden text-info form-control general_settings_input'><hr>";
+	html+="<input type='submit' class='btn btn-block btn-info disabled' value='Submit' id='change_info_btn'><hr>";
+	html+="</form>";
+	$('.add_content').html(html).fadeIn(1500);
+
+	//to add tooltip
+	$('.change_name, .change_email, .change_phone').on('mouseover, mouseout').tooltip();
+});
+
+$(document).ready(function(){
+
+	$('#inner_settings, #inner_notifications, #inner_messages').hide();
+	$('#notifications').on("click", function(){
+		$('#inner_notifications').html("here is some crap").slideToggle(500);
+	});
+	$('#messages').on("click", function(){
+		
+		$('#inner_messages').slideToggle(500);
+
+	});	
+	$('#settings').on("click", function(){
+		var html="";
+		html+="<div class='account_settings'><br>";
+		html+="<p class='one'><a href='#' class='text-info' id='general_settings'>General settings</a></p>";
+		html+="<p><a href='#' class='text-info' id='security_settings'>Security settings</a></p>";
+		html+="<p><a href='#' class='text-info' id='privacy_settings'>Privacy</a><br><br>";
+		html+="</div>";
+		$('#inner_settings').html(html);
+		$('#inner_settings').slideToggle(500);
+
+		
+	});
+
+});

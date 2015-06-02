@@ -11,10 +11,16 @@ body{
 	font-variant: small-caps;
 	font-size: 15px;
 }
+#login{
+	margin-bottom: 8em;
+}
 
 #contact-form{
 	background-color: #55AA55;
 	padding: 20px;
+}
+div>a:hover, p>a:hover{
+	background-color: white;
 }
 #about{
 	background-color: #55AA55;

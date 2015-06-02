@@ -9,24 +9,35 @@
 			<div class="row clearfix">
 				<div class="col-md-4 column side_bar">
 					<ul class="nav nav-pills">
-						<li class="active" >
-							<a href="#"> <span class="badge pull-right" >42</span>Profile</a>
+						<li class="active">
+							<a href="#"> <span class="badge pull-right"></span> Profile</a>
 						</li>
 						<li>
-							<a href="#"> <span class="badge pull-right">16</span> More</a>
+							<a href="#"> <span class="badge pull-right">0</span> Services</a>
 						</li>
-					</ul><img alt="140x140" src="./img/profile_pic.jpg" class="img-thumbnail" id="profile_pic" />
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-							Panel title
-							</h3>
+						<li>
+							<a href="#"> <span class="badge pull-right">0</span> Blog</a>
+						</li>
+					</ul>
+					<img alt="140x140" src="./img/profile_pic.jpg" class="img-thumbnail" id="profile_pic" />
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<a class="panel-title collapsed" id="notifications" data-toggle="collapse" data-parent="#panel-55795" href="#">Notifications</a>
+								<p><div id="inner_notifications"></div></p>									
+							</div>									
 						</div>
-						<div class="panel-body">
-							Panel content
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<a class="panel-title collapsed" id="messages" data-toggle="collapse" data-parent="#panel-55795" href="#">Messages</a>
+								<p><div id="inner_messages"></div></p>
+							</div>
 						</div>
-						<div class="panel-footer">
-							Panel footer
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<a class="panel-title" data-toggle="collapse" id="settings" data-parent="#panel-55795" href="#">Account Settings</a>
+								<div id="inner_settings"></div>
+							</div>
 						</div>
 					</div>
 				</div>
